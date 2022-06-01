@@ -1,0 +1,323 @@
+*{
+  box-sizing: border-box
+}
+
+/* CSS custom properties:  */
+:root{
+  --primary-f:'STKaiti', Times News Roman;
+  --secondary-f: 'Source Sans Pro', Arial;
+  
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-h1: 2.2rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.25rem
+  --fs-body: 1rem;
+
+  --clr-bg: #d9d9d9;
+  --clr-dk: black;
+  --clr-light: white;
+  --clr-tx: black;
+  --clr-main: #49cef8;
+  --secclr-tx: white;
+
+}
+
+/* Main Style */
+
+body{
+  background-color: var(--clr-bg);
+  color: var(--clr-tx);
+  font-family: var(--primary-f);
+  font-size: var(--fs-body);
+  margin: 0;
+  line-height: 1.6 rem;
+}
+
+/* .wrapper{
+  margin: 2em 1.2em auto;
+  background: var(--clr-light);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);;
+} */
+
+section{
+  padding: 2em 3em;
+}
+
+ .section-title{
+    color: var(--clr-main);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-light);
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.25rem;
+  }
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+/*  導覽欄*/
+header {
+  background: var(--clr-main);
+/*   padding: 10vh 100vw; */
+  color: white;
+/*     display: flex;
+    justify-content: flex-start;
+    padding: 1em; */
+}
+
+.header-button {
+  max-height:15vh;
+  max-width:10vw;
+  border: 4rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-open nav{
+  transform: translateX(0);
+}
+
+.nav-open .header-button{
+  position:fixed;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+
+nav{
+   position: fixed;
+    background: var(--clr-main);
+    color: var(--secclr-tx);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item{
+  margin: 1.5rem;
+}
+
+.nav-link{
+  color: var(--clr-light);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: var(--clr-dk);
+}
+}
+
+/* 開場 */
+
+.opening{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.opening-photo{
+  order: 2;
+/*   max-width:60vw;
+  max-height:60vh;
+  box-shadow: 5px 5px 5px 7px rgba(236, 236, 236, 0.7); */
+}
+
+/* .opening-subtitle{
+  background-color: var(--clr-main);
+  color: var(--secclr-tx);
+  text-align: center;
+  margin-bottom: 0.25em;
+  
+} */
+
+/*  理念簡介*/
+
+.idea{
+    background-image: url("https://i.postimg.cc/wBzN3ptc/2022-06-01-1-48-58.png");
+    background-size: cover;
+/*     background-repeat: no-reapt;
+    margin: 2em 1.2em;
+    max-width: 120vw;
+    height: 170vh;  */
+}
+
+  .idea-container{
+
+    color: var(--secclr-tx);
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+ 
+
+.idea-subtitle{
+  padding: 10px 10px;
+  flex: 1.2;
+  background-color: var(--clr-light);
+  margin-top: 0.5rem;
+  color: var(--clr-tx);
+}
+
+/*  議題討論*/
+
+.issue-title,
+.issue-subtitle{
+  text-align: center;
+}
+
+.issue-subtitle{
+  margin: 0.5rem;
+}
+
+.issue-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  transition: 
+      transform 750ms cubic-bezier(.5, 0, .5, 1),
+      opacity 250ms linear;
+}
+
+.issue-photo:hover{
+  transform: scale(1.2);
+/*     opacity: 1; */
+}
+
+/* 
+.idea-button{
+  background-color: red;
+  color: var(--clr-light);
+  border: 20px;
+  display: inline-block;
+  padding: .5em 1.5em;
+  background: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+ */
+/* .{
+  display: flex
+  flex:1 10rem;
+  background-color: var(--clr-main);
+  color: black;
+  justify-content: space-around;
+} */
+
+/* .idea-title,
+idea-subtitle{
+  flex: 1.5
+} */
+
+ 
+
+h1,
+h2,
+h3{
+  line-height: 1.1 rem;
+/*   margin: 0; */
+  
+}
+
+h1{
+  font-size: var(--fs-h1);
+  font-family: var(--primary-f)
+}
+
+h2{
+  font-size: var(--fs-h2);
+  margin-bottom: 0.25 rem;
+}
+
+h3{
+  font-size: var(--fs-h3);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.opening-title{
+  font-family: 'STKaiti
+}
+
+/* .opening-title{
+  margin: 0;
+  font-size: var(--fs-h2);
+  margin-bottom: 0.25em;
+  text-align: center; 
+} */
+
+/* .issue-subtitle,
+.adv-subtitle{
+  margin: 0;
+  font-size: var(--fs-h3);
+  background-color: var(--clr-main);
+  color: white;
+   */
+}
+
+/* Media query */
+
+@media (min-width: 800px){
+  ：root{
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.75rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem;
+  }
+
+  .opening{
+    display: flex;
+    margin: 1.5rem 1.5rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .opening-photo{
+    order: -1;
+    max-width:50vh;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .
+
+
+
+/*   .opening-text{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+  } */
+}
+
+/* Questions
+1. How to size the background relative to its content?
+
+*/
