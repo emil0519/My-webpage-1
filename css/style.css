@@ -54,7 +54,6 @@ img{
 /*  導覽欄*/
 header {
   background: var(--clr-main);
-  color: white;
 }
 
 .header-button {
@@ -111,6 +110,10 @@ nav{
 
 .nav-link:hover{
   color: var(--clr-dk);
+}
+
+.big-nav{
+  display: block; 
 }
 
 
@@ -215,10 +218,12 @@ nav{
 
 #advocacy{
   text-align: center;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .a-wrapper{
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -228,7 +233,8 @@ nav{
 }
 
 .list-container{
-  padding: 2em 2em;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .a-li{
@@ -237,6 +243,7 @@ nav{
   border-bottom: solid 1px #dedede;
   background: white;
   flex-direction: row;
+  width: 100%;
 }
 
 .a-li:last-child{
@@ -245,7 +252,7 @@ nav{
 
 .input-main{
   font-size: 1.15em;
-  width: 70%;
+  width: 100%;
   padding: 0.5em 1em;
   border: 1px solid #dcdcdc;
   flex: 5;
@@ -276,7 +283,7 @@ nav{
   color: white;
   border: none;
   cursor: pointer;
-  width: 80%;
+  width: 100%;
   margin: 0.2rem 0rem;
 }
 
@@ -322,6 +329,9 @@ h3{
 
 ul{
   list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .opening-title{
@@ -332,15 +342,25 @@ ul{
 
 footer{
   background-color: var(--clr-main);
+  margin:0;
+  margin-top: 2vh;
 }
 
 .footer-content{
   color: var(--clr-light);
   text-align: center;
-  margin: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 12px;
+}
+
+.menu {
+  display: none;
 }
 
 /* Media query */
+
+
 
 @media (min-width: 800px){
   ：root{
@@ -350,13 +370,17 @@ footer{
   --fs-body: 1.125rem;
   }
 
+ .header-button {
+   display: none;
+ } 
+  .menu {
+    display: block;
+  }
+
 .banner,
 #idea{
   min-height: 100vh;
 
-.nav-button{
-  display: none;
-}
   
 .opening{
     display: flex;
@@ -367,7 +391,4 @@ footer{
 
 
 
-/* Questions
-1. How to size the background relative to its content?
 
-*/
