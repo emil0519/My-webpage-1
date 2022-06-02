@@ -54,6 +54,7 @@ img{
 /*  導覽欄*/
 header {
   background: var(--clr-main);
+  max
 }
 
 .header-button {
@@ -388,4 +389,11 @@ footer{
   margin: 0 auto;
   width: 100%
   height: 10vh;
+}
+
+.big-nav-list{
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 5px;
+  flex-direction: row;
 }
