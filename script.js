@@ -44,5 +44,3 @@ btnToggle.addEventListener('click', () => {
 btnRemove.addEventListener('click', () => {
 	const lastItem = document.querySelector('.a-li:first-child');												lastItem.remove(); 
 });
-
-//因為網頁設計與功能所限，未能完全地展現我的Javascript進度，此部分的Javascript也有參考不同課程中的作業。我誠摯邀請您到git中的demo.js，瀏覽我在其他課程中的Javascript實作//
