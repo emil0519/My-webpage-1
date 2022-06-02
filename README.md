@@ -1,5 +1,3 @@
-# emil0519.github.io
-
 <h1><strong>Feature</strong></h1>
 
 <h3>RWD and mobile based design</h3>
