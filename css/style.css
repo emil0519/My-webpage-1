@@ -113,7 +113,7 @@ nav{
 }
 
 .big-nav{
-  display: block; 
+  display: none; 
 }
 
 
@@ -174,8 +174,9 @@ nav{
 .idea-subtitle{
   flex: 1.2;
   background-color: var(--clr-light);
-  padding: 0 1rem;
+  padding: 0.5rem;
   color: var(--clr-tx);
+  
 }
 
 /*  議題討論*/
@@ -380,15 +381,11 @@ footer{
 .banner,
 #idea{
   min-height: 100vh;
+}
 
-  
-.opening{
-    display: flex;
-    margin: 1.5rem 1.5rem auto;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-
-
-
+.big-nav{
+  display:block;
+  margin: 0 auto;
+  width: 100%
+  height: 10vh;
+}
