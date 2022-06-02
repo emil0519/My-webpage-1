@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/97882056/171678861-6e35d5fd-e4c2-40bf-
  
 <ul>
 <li>Dark mode, add an icon in navigation bar to change the main colour into black.</li>
-<li>Google search embedded in navigation bar, enable search of content inside the website.</li>
+<li>Google search embedded in navigation bar, enable search of content within the website.</li>
 <li>Inter-changable lagnuage.  Enable changes from Chinese and English version in major content.</li>
 <li>Interactive charts and table to display data of each issue.</li>
 <li>Content editable for all-user, with version control to record and restore content in previous version.</li>
