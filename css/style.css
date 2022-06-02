@@ -55,7 +55,6 @@ img{
 header {
   background: var(--clr-main);
   color: white;
-
 }
 
 .header-button {
@@ -355,6 +354,10 @@ footer{
 #idea{
   min-height: 100vh;
 
+.nav-button{
+  display: none;
+}
+  
 .opening{
     display: flex;
     margin: 1.5rem 1.5rem auto;
