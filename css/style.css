@@ -36,16 +36,6 @@ body{
   scroll-behavior: smooth;
 }
 
-/* .wrapper{
-  margin: 2em 1.2em auto;
-  background: var(--clr-light);
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);;
-} */
-
-/* section:not(.open){
-  padding: 2em 3em;
-} */
 
  .section-title{
     color: var(--clr-dk);
@@ -64,11 +54,8 @@ img{
 /*  導覽欄*/
 header {
   background: var(--clr-main);
-/*   padding: 10vh 100vw; */
   color: white;
-/*     display: flex;
-    justify-content: flex-start;
-    padding: 1em; */
+
 }
 
 .header-button {
@@ -159,30 +146,10 @@ nav{
 }
 
 
-/*  理念簡介*/
-
-/* .idea-container{
-  margin-top: 40vh;
-  color: white;
-  background: url('https://i.postimg.cc/wBzN3ptc/2022-06-01-1-48-58.png') top left/cover no-repeat;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-} */
-
 #idea{
     background-image: url("https://i.postimg.cc/DfXNvnLY/new-crowd.png");
     background-size: cover;
     background-repeat: no-reapt;
-/*     margin: 2em 1.2em;
-    max-width: 120vw;
-    height: 170vh;  */
 }
 
   .idea-container{
@@ -203,7 +170,6 @@ nav{
  
 
 .idea-subtitle{
-/*   padding: 10px 10px; */
   flex: 1.2;
   background-color: var(--clr-light);
   padding: 0 1rem;
@@ -226,9 +192,7 @@ nav{
   margin: 2rem 0rem;
 }
 
-.issue-content{
-  
-}
+
 
 .issue-gallery{
   padding: 3rem;
@@ -245,44 +209,101 @@ nav{
 
 .issue-photo:hover{
   transform: scale(1.2);
-/*     opacity: 1; */
 }
 
-/* 
-.idea-button{
-  background-color: red;
-  color: var(--clr-light);
-  border: 20px;
-  display: inline-block;
-  padding: .5em 1.5em;
-  background: var(--clr-accent);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: .8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-} 
- */
-/* .{
+
+/*  倡議*/
+
+#advocacy{
+  text-align: center;
+}
+
+.a-wrapper{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0 10px 22px -15px #2e397e;
+}
+
+.list-container{
+  padding: 2em 2em;
+}
+
+.a-li{
+  padding: 2rem 2rem;
+  align-items: center;
+  border-bottom: solid 1px #dedede;
+  background: white;
+  flex-direction: row;
+}
+
+.a-li:last-child{
+  border: none;
+}
+
+.input-main{
+  font-size: 1.15em;
+  width: 70%;
+  padding: 0.5em 1em;
+  border: 1px solid #dcdcdc;
+  flex: 5;
+}
+
+.input-add{
   display: flex
-  flex:1 10rem;
+}
+
+.btn-main{
+  color: white;
+  font-size: 1em;
+  padding: 1em;
   background-color: var(--clr-main);
-  color: black;
-  justify-content: space-around;
-} */
+  border: none;
+  cursor: pointer;
+  transition: black 0.2s ease-in-out;
+}
 
-/* .idea-title,
-idea-subtitle{
-  flex: 1.5
-} */
+.btn-main:hover{
+  background-color: #49aff8;
+}
 
- 
+.btn-toggle{
+  background-color: #8188ae;
+  font-size: 1em;
+  padding: 1em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin: 0.2rem 0rem;
+}
+
+.btn-toggle:hover{
+  background-color: #949ab5;
+}
+
+.btn-remove {
+  color: white;
+  padding: 0.85em 1em;
+  background-color: #6B0617;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-remove:hover{
+  background-color: #870406;
+}
+
+
+/* Text*/
 
 h1,
 h2,
 h3{
   line-height: 1.1 rem;
-/*   margin: 0; */
   
 }
 
@@ -308,20 +329,16 @@ ul{
   font-family: 'STKaiti
 }
 
-/* .opening-title{
-  margin: 0;
-  font-size: var(--fs-h2);
-  margin-bottom: 0.25em;
-  text-align: center; 
-} */
+/* footer */
 
-/* .issue-subtitle,
-.adv-subtitle{
-  margin: 0;
-  font-size: var(--fs-h3);
+footer{
   background-color: var(--clr-main);
-  color: white;
-   */
+}
+
+.footer-content{
+  color: var(--clr-light);
+  text-align: center;
+  margin: 3rem;
 }
 
 /* Media query */
@@ -334,33 +351,18 @@ ul{
   --fs-body: 1.125rem;
   }
 
-  .banner{
-    height: 4vh;
-  }
+.banner,
+#idea{
+  min-height: 100vh;
 
-  .opening{
+.opening{
     display: flex;
     margin: 1.5rem 1.5rem auto;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-/*   .opening-photo{
-    order: -1;
-    max-width:50vh;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  } */
 
-
-
-
-
-/*   .opening-text{
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-  } */
-}
 
 /* Questions
 1. How to size the background relative to its content?

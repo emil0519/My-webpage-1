@@ -7,16 +7,10 @@
     <meta name= "authro" content= "劉世鏗">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title= 台灣公共政策開源討論平台>
-  <link rel= "stylesheet" href="css/style.css">
-
-<!--   字體 之後再改 -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-
-      
+  <link rel= "stylesheet" href="css/style.css">     
   </head>
 
-  <body>
-    
+<body>   
 <!--       導航欄 -->
     <header>
       <div class= "nav-button">
@@ -26,17 +20,16 @@
       
       <nav>
         <ul class="nav-list">
-          <li class="nav-item"> <a href=".open" class="nav-link">首頁</a><li>
+          <li class="nav-item"> <a href="#open" class="nav-link">首頁</a><li>
           <li class="nav-item"> <a href="#idea" class="nav-link ">理念簡介</a><li>
-          <li class="nav-item"> <a href="index.html/.issue" class="nav-link">討論議題</a><li>
-          <li class="nav-item"> <a href="#" class="nav-link">我要倡議</a><li>
-          <li class="nav-item"> <a href="#" class="nav-link">聯絡我們</a><li>
+          <li class="nav-item"> <a href="#issue" class="nav-link">討論議題</a><li>
+          <li class="nav-item"> <a href="#advocacy" class="nav-link">我要倡議</a><li>
         </ul>
       </nav>
     
 
 <!--   開場 -->
-    <section class="open">
+    <section id="open">
       <div class="banner">
   
     <h1 class="open-title">台灣 , 需要你來發聲 ! <br> <br>
@@ -65,45 +58,40 @@
       
 
 <!--       議題討論  -->
-      <section class="issue">
+      <section id="issue">
         <div class= "issue-content">
           <h2 class="section-title"> 任何人都可以編輯的</h2>
           <p class="issue-subtitle">討論 / 倡議平台</p>
         </div>
         <div class="issue-gallery">
           
-          <a href="#" alt>
             <img src="https://i.postimg.cc/W1ff0WVH/1344x1008-195265434764.jpg" title= "政府資訊發布的質素如何？
 會不會發佈大量資訊混淆視聽？
 圖片來自 中央社"  class="issue-photo">
           </a>
           
-          <a href="" alt>
             <img src="https://i.postimg.cc/ncK4Fc22/8375158.jpg" title="台灣應該爭取機車平權嗎？
 平權之後有什麼後果？
 圖片來自 聯合報" class="issue-photo">
           </a>
             
-          <a href="#" alt>
             <img src="https://i.postimg.cc/vH2pvHLh/20220517-120226-U18448-M764116-2865.jpg" title= "清零還是共存？
 決定重大政策前應該怎麼諮詢公民？
 圖片來自 風傳媒
 " class="issue-photo">
           </a>
           
-          <a href="#" alt>
             <img src="https://i.postimg.cc/hGt84nQz/20190524002989.jpg" title="美中貿易戰對台灣的影響是什麼？
 政府目前的定位是什麼？應該是什麼？
 圖片來自 報導者" class="issue-photo">
           </a>
             
-          <a href="#" alt>
+          
             <img src="https://i.postimg.cc/B615P3cm/5-E721-AFE48-DF71584536318.jpg" title= "為什麼會有人成為無家者？
 政府與社會大眾應該如何幫助他們呢？
 圖片來自 美麗佳人" class="issue-photo">
           </a>
           
-          <a href="#" alt>
             <img src="https://i.postimg.cc/BQJD4HyY/d619109.jpg" title= "2022年的選舉是否重現藍綠競爭？
 我們應該如何審視候選人？
 圖片來自 Etoday 新聞" alt class="issue-photo">
@@ -113,17 +101,40 @@
 
 <!-- 議題倡議 -->
 
-      <section class="advocacy">
+      <section id="advocacy">
         <h2 class="section-title"> 倡議許願池</h2>
-        <h3 class= "adv-subtitle"> 台灣需要你的一份力，讓公民社會變得更蓬勃</h3>
-        <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
+        <h3 class= "adv-subtitle"> 上面沒有你關心的議題？來告訴大家你想要討論什麼吧！</h3>
+        <div class="a-wrapper">
+        <div class="input-add">
+         <input type="text" id="main" class="input-main">
+          <button class="btn-main">許願！</button>
+        </div>
+        </div>
+      </header>
+
+      <button class="btn-toggle">隱藏列表</button>
+
+      <div class="list-container">
+        <ul class= "ul">
+          <li class="a-li">課綱改革</li>
+          <li class="a-li">政府應該怎樣推實行語言平權？</li>
+          <li class="a-li">女性如今獲得實質平等了嗎？</li>
+          <li class="a-li">勞權應如何改革？</li>
+          <li class="a-li">資本主義真的是最好的制度？</li>
+        </ul>
+        <button class="btn-remove">哎呀不小心多加了，移除剛剛加的</button>
+        
+        </div>
       </section>
-
-
-<!-- 聯絡我們 -->
       
     </section>
-          
+
+  <footer>
+
+  <p class= "footer-content">如果對本網頁有任何建議，歡迎傳電郵到<a href= "mailto: r09343018@ntu.edu.tw?subject=Contact%20from%20your%20perosanl page">r09343018@ntu.edu.tw</a>與我聯繫。</p>
+    
+  </footer>
+    
   <script src="script.js"></script>
 
     
