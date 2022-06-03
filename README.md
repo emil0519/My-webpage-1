@@ -1,6 +1,6 @@
 <h1><strong>Feature</strong></h1>
 
-<h4>Please <a href="emil0519.github.io">click me</a> to the website.  My apology for wrong link in application form.</h4>
+<h4>Please access to my website through emil0519.github.io.  My apology for wrong link in application form.</h4>
 
 <h3>RWD and mobile based design</h3>
 
